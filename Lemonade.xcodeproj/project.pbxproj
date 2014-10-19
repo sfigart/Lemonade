@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7746900719F44C2B0074B591 /* LemonadeBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900619F44C2A0074B591 /* LemonadeBrain.swift */; };
+		7746900A19F44D390074B591 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900919F44D390074B591 /* Customer.swift */; };
+		7746900C19F44D9E0074B591 /* CustomerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900B19F44D9E0074B591 /* CustomerFactory.swift */; };
+		7746900E19F456120074B591 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900D19F456120074B591 /* GameData.swift */; };
 		7794586A19F2043000EBE046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794586919F2043000EBE046 /* AppDelegate.swift */; };
 		7794586C19F2043000EBE046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794586B19F2043000EBE046 /* ViewController.swift */; };
 		7794586F19F2043000EBE046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794586D19F2043000EBE046 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7746900619F44C2A0074B591 /* LemonadeBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LemonadeBrain.swift; sourceTree = "<group>"; };
+		7746900919F44D390074B591 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		7746900B19F44D9E0074B591 /* CustomerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerFactory.swift; sourceTree = "<group>"; };
+		7746900D19F456120074B591 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		7794586419F2043000EBE046 /* Lemonade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lemonade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794586819F2043000EBE046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7794586919F2043000EBE046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7746900819F44D290074B591 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7746900619F44C2A0074B591 /* LemonadeBrain.swift */,
+				7746900919F44D390074B591 /* Customer.swift */,
+				7746900B19F44D9E0074B591 /* CustomerFactory.swift */,
+				7746900D19F456120074B591 /* GameData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		7794585B19F2043000EBE046 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +96,7 @@
 		7794586619F2043000EBE046 /* Lemonade */ = {
 			isa = PBXGroup;
 			children = (
+				7746900819F44D290074B591 /* Models */,
 				7794586919F2043000EBE046 /* AppDelegate.swift */,
 				7794586B19F2043000EBE046 /* ViewController.swift */,
 				7794586D19F2043000EBE046 /* Main.storyboard */,
@@ -212,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7746900719F44C2B0074B591 /* LemonadeBrain.swift in Sources */,
+				7746900E19F456120074B591 /* GameData.swift in Sources */,
 				7794586C19F2043000EBE046 /* ViewController.swift in Sources */,
 				7794586A19F2043000EBE046 /* AppDelegate.swift in Sources */,
+				7746900C19F44D9E0074B591 /* CustomerFactory.swift in Sources */,
+				7746900A19F44D390074B591 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +431,7 @@
 				7794588519F2043000EBE046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7794588619F2043000EBE046 /* Build configuration list for PBXNativeTarget "LemonadeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +440,7 @@
 				7794588819F2043000EBE046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
