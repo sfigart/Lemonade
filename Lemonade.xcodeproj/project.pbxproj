@@ -11,6 +11,8 @@
 		7746900A19F44D390074B591 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900919F44D390074B591 /* Customer.swift */; };
 		7746900C19F44D9E0074B591 /* CustomerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900B19F44D9E0074B591 /* CustomerFactory.swift */; };
 		7746900E19F456120074B591 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900D19F456120074B591 /* GameData.swift */; };
+		7746901019F476D40074B591 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746900F19F476D40074B591 /* Weather.swift */; };
+		7746901219F4775E0074B591 /* WeatherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746901119F4775E0074B591 /* WeatherFactory.swift */; };
 		7794586A19F2043000EBE046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794586919F2043000EBE046 /* AppDelegate.swift */; };
 		7794586C19F2043000EBE046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7794586B19F2043000EBE046 /* ViewController.swift */; };
 		7794586F19F2043000EBE046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7794586D19F2043000EBE046 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		7746900919F44D390074B591 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		7746900B19F44D9E0074B591 /* CustomerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerFactory.swift; sourceTree = "<group>"; };
 		7746900D19F456120074B591 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		7746900F19F476D40074B591 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		7746901119F4775E0074B591 /* WeatherFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFactory.swift; sourceTree = "<group>"; };
 		7794586419F2043000EBE046 /* Lemonade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lemonade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7794586819F2043000EBE046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7794586919F2043000EBE046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				7746900919F44D390074B591 /* Customer.swift */,
 				7746900B19F44D9E0074B591 /* CustomerFactory.swift */,
 				7746900D19F456120074B591 /* GameData.swift */,
+				7746900F19F476D40074B591 /* Weather.swift */,
+				7746901119F4775E0074B591 /* WeatherFactory.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 				7794586A19F2043000EBE046 /* AppDelegate.swift in Sources */,
 				7746900C19F44D9E0074B591 /* CustomerFactory.swift in Sources */,
 				7746900A19F44D390074B591 /* Customer.swift in Sources */,
+				7746901019F476D40074B591 /* Weather.swift in Sources */,
+				7746901219F4775E0074B591 /* WeatherFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

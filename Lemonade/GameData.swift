@@ -12,6 +12,9 @@ struct GameData {
     let costOfLemons = 2
     let costOfIceCubes = 1
     
+    // Weather
+    var weather = WeatherFactory.getWeather()
+    
     // Money and Supplies
     var moneyOnHand = 0
     var lemonsOnHand = 0
@@ -30,6 +33,7 @@ struct GameData {
     func printState() {
         println("Game data")
         println("---------")
+        println("weather: \(weather.status)")
         println("costOfLemons: \(costOfLemons)")
         println("costOfIceCubes: \(costOfIceCubes)")
         println("Money and Supplies")

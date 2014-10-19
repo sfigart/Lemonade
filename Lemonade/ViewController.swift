@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lemonsMixedLabel: UILabel!
     @IBOutlet weak var iceCubesMixedLabel: UILabel!
+    
+    @IBOutlet weak var weatherImage: UIImageView!
+    @IBOutlet weak var weatherStatusLabel: UILabel!
 
     // Money and Supplies
     var moneyOnHand = 0
@@ -151,7 +154,6 @@ class ViewController: UIViewController {
         }
 
         // Save Game Data
-        var data = GameData()
         data.moneyOnHand = self.moneyOnHand
         data.lemonsOnHand = self.lemonsOnHand
         data.iceCubesOnHand = self.iceCubesOnHand
@@ -160,7 +162,19 @@ class ViewController: UIViewController {
         data.lemonsToMix = self.lemonsToMix
         data.iceCubesToMix = self.iceCubesToMix
         
-        let numberOfCustomers = Int(arc4random_uniform(UInt32(10))) + 1 // returns 1 to 10
+        var numberOfCustomers = Int(arc4random_uniform(UInt32(10))) + 1 // returns 1 to 10
+        
+        // Add weather variable
+        if data.weather.value == 0 {
+            // Cold
+            numberOfCustomers -= 3
+            if numberOfCustomers < 0 {
+                numberOfCustomers = 1
+            }
+        } else if data.weather.value == 2 {
+            // Warm
+            numberOfCustomers += 4
+        }
         
         data.customers = CustomerFactory.createCustomers(numberOfCustomers)        
         data.printState()
@@ -207,6 +221,11 @@ class ViewController: UIViewController {
         
         lemonsMixedLabel.text = "\(lemonsToMix)"
         iceCubesMixedLabel.text = "\(iceCubesToMix)"
+        
+        weatherImage.image = data.weather.image
+        weatherStatusLabel.text = data.weather.status
+        
+        println("weather: \(data.weather.value)")
     }
     
     func canPurchase(price:Int) -> Bool {

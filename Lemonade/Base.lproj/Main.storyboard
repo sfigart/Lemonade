@@ -244,7 +244,7 @@
                                 <color key="textColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="345" width="288" height="21"/>
+                                    <rect key="frame" x="16" y="339" width="288" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do your customers prefer more ice or more lemons today?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdm-Jf-uw1">
@@ -263,7 +263,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="68" y="367" width="242" height="79"/>
+                                    <rect key="frame" x="92" y="361" width="218" height="97"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80N-P2-xiG">
@@ -272,12 +272,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Start Day"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="120" y="492" width="80" height="30"/>
+                                    <rect key="frame" x="120" y="518" width="80" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="startDayButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7be-vs-aVg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-Yu-d04">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="368" width="60" height="60"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4na-xZ-ilW">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="436" width="60" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -308,6 +323,8 @@
                                 <exclude reference="Qdm-Jf-uw1"/>
                                 <exclude reference="9bM-Me-ZD2"/>
                                 <exclude reference="80N-P2-xiG"/>
+                                <exclude reference="Ehf-Yu-d04"/>
+                                <exclude reference="4na-xZ-ilW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -338,6 +355,8 @@
                                 <include reference="Qdm-Jf-uw1"/>
                                 <include reference="9bM-Me-ZD2"/>
                                 <include reference="80N-P2-xiG"/>
+                                <include reference="Ehf-Yu-d04"/>
+                                <include reference="4na-xZ-ilW"/>
                             </mask>
                         </variation>
                     </view>
@@ -350,6 +369,8 @@
                         <outlet property="lemonsOnHandLabel" destination="jpP-rO-0ob" id="JQt-eP-9Wm"/>
                         <outlet property="lemonsPurchasedLabel" destination="3lq-OQ-PqA" id="sc9-GG-HXJ"/>
                         <outlet property="moneyOnHandLabel" destination="ukc-Lu-Gbs" id="fDd-3B-QIL"/>
+                        <outlet property="weatherImage" destination="Ehf-Yu-d04" id="1Qi-Nl-kuu"/>
+                        <outlet property="weatherStatusLabel" destination="4na-xZ-ilW" id="vv2-CI-bot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
